@@ -1,0 +1,8 @@
+prefix=/home/halil/Documents/sim_ws/install
+
+Name: panel_base_description
+Description: Description of panel_base_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

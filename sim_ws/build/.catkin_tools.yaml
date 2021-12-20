@@ -1,0 +1,6 @@
+devel_space: /home/halil/Documents/sim_ws/devel
+install: false
+install_space: /home/halil/Documents/sim_ws/install
+profile: default
+source_space: /home/halil/Documents/sim_ws/src
+workspace: /home/halil/Documents/sim_ws
