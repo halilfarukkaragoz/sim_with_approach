@@ -1,8 +1,0 @@
-prefix=/home/halil/Documents/sim_ws/devel/.private/blender_gazebo
-
-Name: blender_gazebo
-Description: Description of blender_gazebo
-Version: 0.0.4
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

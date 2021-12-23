@@ -1,8 +1,0 @@
-prefix=/home/halil/Documents/sim_ws/devel/.private/panel
-
-Name: panel
-Description: Description of panel
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

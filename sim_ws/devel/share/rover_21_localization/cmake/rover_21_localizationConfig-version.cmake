@@ -1,1 +1,0 @@
-/home/halil/Documents/sim_ws/devel/.private/rover_21_localization/share/rover_21_localization/cmake/rover_21_localizationConfig-version.cmake

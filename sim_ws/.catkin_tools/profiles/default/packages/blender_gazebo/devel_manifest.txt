@@ -1,5 +1,0 @@
-Simulations/blender_gazebo
-/home/halil/Documents/sim_ws/devel/.private/blender_gazebo/cmake.lock /home/halil/Documents/sim_ws/devel/./cmake.lock
-/home/halil/Documents/sim_ws/devel/.private/blender_gazebo/share/blender_gazebo/cmake/blender_gazeboConfig.cmake /home/halil/Documents/sim_ws/devel/share/blender_gazebo/cmake/blender_gazeboConfig.cmake
-/home/halil/Documents/sim_ws/devel/.private/blender_gazebo/share/blender_gazebo/cmake/blender_gazeboConfig-version.cmake /home/halil/Documents/sim_ws/devel/share/blender_gazebo/cmake/blender_gazeboConfig-version.cmake
-/home/halil/Documents/sim_ws/devel/.private/blender_gazebo/lib/pkgconfig/blender_gazebo.pc /home/halil/Documents/sim_ws/devel/lib/pkgconfig/blender_gazebo.pc

@@ -1,6 +1,0 @@
-Simulations/interactive_marker_twist_server
-/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/cmake.lock /home/halil/Documents/sim_ws/devel/./cmake.lock
-/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/share/interactive_marker_twist_server/cmake/interactive_marker_twist_serverConfig-version.cmake /home/halil/Documents/sim_ws/devel/share/interactive_marker_twist_server/cmake/interactive_marker_twist_serverConfig-version.cmake
-/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/share/interactive_marker_twist_server/cmake/interactive_marker_twist_serverConfig.cmake /home/halil/Documents/sim_ws/devel/share/interactive_marker_twist_server/cmake/interactive_marker_twist_serverConfig.cmake
-/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/lib/pkgconfig/interactive_marker_twist_server.pc /home/halil/Documents/sim_ws/devel/lib/pkgconfig/interactive_marker_twist_server.pc
-/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/lib/interactive_marker_twist_server/marker_server /home/halil/Documents/sim_ws/devel/lib/interactive_marker_twist_server/marker_server

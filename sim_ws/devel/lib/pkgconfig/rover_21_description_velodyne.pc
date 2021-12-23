@@ -1,1 +1,0 @@
-/home/halil/Documents/sim_ws/devel/.private/rover_21_description_velodyne/lib/pkgconfig/rover_21_description_velodyne.pc

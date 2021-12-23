@@ -1,1 +1,0 @@
-/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/share/interactive_marker_twist_server/cmake/interactive_marker_twist_serverConfig.cmake

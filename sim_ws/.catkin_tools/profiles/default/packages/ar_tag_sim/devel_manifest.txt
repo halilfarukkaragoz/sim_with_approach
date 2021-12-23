@@ -1,5 +1,0 @@
-ar_tag_sim
-/home/halil/Documents/sim_ws/devel/.private/ar_tag_sim/cmake.lock /home/halil/Documents/sim_ws/devel/./cmake.lock
-/home/halil/Documents/sim_ws/devel/.private/ar_tag_sim/share/ar_tag_sim/cmake/ar_tag_simConfig.cmake /home/halil/Documents/sim_ws/devel/share/ar_tag_sim/cmake/ar_tag_simConfig.cmake
-/home/halil/Documents/sim_ws/devel/.private/ar_tag_sim/share/ar_tag_sim/cmake/ar_tag_simConfig-version.cmake /home/halil/Documents/sim_ws/devel/share/ar_tag_sim/cmake/ar_tag_simConfig-version.cmake
-/home/halil/Documents/sim_ws/devel/.private/ar_tag_sim/lib/pkgconfig/ar_tag_sim.pc /home/halil/Documents/sim_ws/devel/lib/pkgconfig/ar_tag_sim.pc

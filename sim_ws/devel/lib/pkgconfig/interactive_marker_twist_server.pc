@@ -1,1 +1,0 @@
-/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/lib/pkgconfig/interactive_marker_twist_server.pc

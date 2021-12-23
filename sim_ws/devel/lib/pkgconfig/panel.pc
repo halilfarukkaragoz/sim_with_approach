@@ -1,1 +1,0 @@
-/home/halil/Documents/sim_ws/devel/.private/panel/lib/pkgconfig/panel.pc

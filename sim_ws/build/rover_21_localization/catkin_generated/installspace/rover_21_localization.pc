@@ -1,8 +1,0 @@
-prefix=/home/halil/Documents/sim_ws/install
-
-Name: rover_21_localization
-Description: Description of rover_21_localization
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

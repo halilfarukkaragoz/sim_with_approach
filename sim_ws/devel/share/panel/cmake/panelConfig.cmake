@@ -1,1 +1,0 @@
-/home/halil/Documents/sim_ws/devel/.private/panel/share/panel/cmake/panelConfig.cmake

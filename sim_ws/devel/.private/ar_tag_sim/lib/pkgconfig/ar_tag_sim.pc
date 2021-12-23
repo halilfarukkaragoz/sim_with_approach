@@ -1,8 +1,0 @@
-prefix=/home/halil/Documents/sim_ws/devel/.private/ar_tag_sim
-
-Name: ar_tag_sim
-Description: Description of ar_tag_sim
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

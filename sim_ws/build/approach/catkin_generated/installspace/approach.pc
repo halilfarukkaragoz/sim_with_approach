@@ -1,8 +1,0 @@
-prefix=/home/halil/Documents/sim_ws/install
-
-Name: approach
-Description: Description of approach
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
