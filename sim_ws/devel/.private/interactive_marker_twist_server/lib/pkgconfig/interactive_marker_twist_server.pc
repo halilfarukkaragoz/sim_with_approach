@@ -1,0 +1,8 @@
+prefix=/home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server
+
+Name: interactive_marker_twist_server
+Description: Description of interactive_marker_twist_server
+Version: 1.2.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

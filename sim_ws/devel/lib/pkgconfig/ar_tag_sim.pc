@@ -1,0 +1,1 @@
+/home/halil/Documents/sim_ws/devel/.private/ar_tag_sim/lib/pkgconfig/ar_tag_sim.pc

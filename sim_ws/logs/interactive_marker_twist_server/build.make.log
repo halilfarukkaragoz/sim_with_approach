@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target interactive_marker_twist_server[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/interactive_marker_twist_server.dir/src/marker_server.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/halil/Documents/sim_ws/devel/.private/interactive_marker_twist_server/lib/interactive_marker_twist_server/marker_server[0m
+[100%] Built target interactive_marker_twist_server
