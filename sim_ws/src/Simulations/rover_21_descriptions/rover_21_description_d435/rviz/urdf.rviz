@@ -147,9 +147,11 @@ Visualization Manager:
           Value: true
         ar_marker_12:
           Value: true
+        ar_marker_3:
+          Value: true
         ar_marker_4:
           Value: true
-        ar_marker_8:
+        ar_marker_9:
           Value: true
         base_footprint:
           Value: true
@@ -209,9 +211,11 @@ Visualization Manager:
                           {}
                         ar_marker_12:
                           {}
+                        ar_marker_3:
+                          {}
                         ar_marker_4:
                           {}
-                        ar_marker_8:
+                        ar_marker_9:
                           {}
                     camera_depth_optical_frame:
                       {}
@@ -297,9 +301,11 @@ Visualization Manager:
           Value: true
         ar_marker_12:
           Value: true
+        ar_marker_3:
+          Value: true
         ar_marker_4:
           Value: true
-        ar_marker_8:
+        ar_marker_9:
           Value: true
         base_footprint:
           Value: true
@@ -359,9 +365,11 @@ Visualization Manager:
                           {}
                         ar_marker_12:
                           {}
+                        ar_marker_3:
+                          {}
                         ar_marker_4:
                           {}
-                        ar_marker_8:
+                        ar_marker_9:
                           {}
                     camera_depth_optical_frame:
                       {}
@@ -411,16 +419,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 11.216720581054688
+      Distance: 6.405394077301025
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.6513190269470215
-        Y: -0.762428343296051
-        Z: 0.16133667528629303
+        X: 1.4636579751968384
+        Y: -0.16572946310043335
+        Z: 0.6798144578933716
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false

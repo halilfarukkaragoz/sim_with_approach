@@ -8,8 +8,12 @@
       "includePath": [
         "/home/halil/Documents/ros_ws/devel/include/**",
         "/opt/ros/melodic/include/**",
+        "/home/halil/Documents/sim_ws/src/approach/include/**",
         "/home/halil/Documents/ros_ws/src/ar_track_alvar/ar_track_alvar/include/**",
         "/home/halil/Documents/ros_ws/src/beginner_tutorials/include/**",
+        "/home/halil/Documents/sim_ws/src/Simulations/realsense_gazebo_plugin/include/**",
+        "/home/halil/Documents/sim_ws/src/Simulations/robot_drive/include/**",
+        "/home/halil/Documents/ros_ws/src/upcase/include/**",
         "/home/halil/Documents/sim_ws/src/Simulations/velodyne_gazebo_plugins/include/**",
         "/usr/include/**"
       ],

@@ -57,7 +57,6 @@ CMakeFiles/blender_gazebo_generate_world_files: /home/halil/Documents/sim_ws/src
 
 
 /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world: /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro
-/home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world: /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/sdf/landmark.sdf.xacro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/halil/Documents/sim_ws/build/blender_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "xacro: generating /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world from /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro"
 	cd /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo && /home/halil/Documents/sim_ws/build/blender_gazebo/catkin_generated/env_cached.sh xacro -o /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro
 

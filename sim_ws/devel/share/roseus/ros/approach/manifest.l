@@ -1,0 +1,1 @@
+/home/halil/Documents/sim_ws/devel/.private/approach/share/roseus/ros/approach/manifest.l

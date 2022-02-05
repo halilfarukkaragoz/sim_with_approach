@@ -143,6 +143,21 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_tag_sim" TYPE FILE FILES "/home/halil/Documents/sim_ws/src/ar_tag_sim/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/halil/Documents/sim_ws/build/ar_tag_sim/catkin_generated/installspace/ar_tag_sim.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_tag_sim/cmake" TYPE FILE FILES
+    "/home/halil/Documents/sim_ws/build/ar_tag_sim/catkin_generated/installspace/ar_tag_simConfig.cmake"
+    "/home/halil/Documents/sim_ws/build/ar_tag_sim/catkin_generated/installspace/ar_tag_simConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ar_tag_sim" TYPE FILE FILES "/home/halil/Documents/sim_ws/src/ar_tag_sim/package.xml")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/halil/Documents/sim_ws/build/ar_tag_sim/gtest/cmake_install.cmake")

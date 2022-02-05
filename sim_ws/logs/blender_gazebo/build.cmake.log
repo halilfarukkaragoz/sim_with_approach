@@ -39,6 +39,30 @@ Not searching for unused variables given on the command line.
 [36m--[0m catkin 0.7.29
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m xacro: determining deps for: /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro ...
+[33m[1mCMake Warning[0m at /opt/ros/melodic/share/xacro/cmake/xacro-extras.cmake:87 (message):
+  failed to determine deps for:
+  /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro
+
+
+  XML parsing error: XML or text declaration not at start of entity: line 3,
+  column 0
+
+  when processing file:
+  /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro
+
+
+
+
+  Check that:
+
+   - Your XML is well-formed
+   - You have the xacro xmlns declaration: xmlns:xacro="http://www.ros.org/wiki/xacro"
+
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/melodic/share/xacro/cmake/xacro-extras.cmake:187 (xacro_add_xacro_file)
+  CMakeLists.txt:14 (xacro_add_files)
+
+
 [36m--[0m Configuring done
 [36m--[0m Generating done
 [36m--[0m Build files have been written to: /home/halil/Documents/sim_ws/build/blender_gazebo

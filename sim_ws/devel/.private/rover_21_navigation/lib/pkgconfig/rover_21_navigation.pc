@@ -1,0 +1,8 @@
+prefix=/home/halil/Documents/sim_ws/devel/.private/rover_21_navigation
+
+Name: rover_21_navigation
+Description: Description of rover_21_navigation
+Version: 0.3.8
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

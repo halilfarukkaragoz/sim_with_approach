@@ -10,8 +10,17 @@ project(ar_tag_sim)
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
+  roscpp
 )
 
+## Declare a catkin package
+catkin_package()
+
+## Build talker and listener
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(axis_corrector src/axis_corrector.cpp)
+target_link_libraries(axis_corrector ${catkin_LIBRARIES})
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 

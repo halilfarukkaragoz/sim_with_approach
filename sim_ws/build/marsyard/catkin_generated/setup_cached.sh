@@ -9,5 +9,6 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/halil/Documents/sim_ws/devel/.private/marsyard:$CMAKE_PREFIX_PATH"
 export PWD='/home/halil/Documents/sim_ws/build/marsyard'
+export PYTHONPATH="/home/halil/Documents/sim_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/halil/Documents/sim_ws/devel/.private/marsyard/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/halil/Documents/sim_ws/src/Simulations/marsyard:$ROS_PACKAGE_PATH"

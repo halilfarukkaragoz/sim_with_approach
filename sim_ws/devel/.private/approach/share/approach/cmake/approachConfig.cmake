@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(approach_EXPORTED_TARGETS "")
+set(approach_EXPORTED_TARGETS "approach_generate_messages_cpp;approach_generate_messages_eus;approach_generate_messages_lisp;approach_generate_messages_nodejs;approach_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${approach_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND approach_EXPORTED_TARGETS ${${approach_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "approach-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${approach_DIR}/${extra})

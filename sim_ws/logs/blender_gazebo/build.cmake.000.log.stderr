@@ -1,0 +1,24 @@
+[33m[1mCMake Warning[0m at /opt/ros/melodic/share/xacro/cmake/xacro-extras.cmake:87 (message):
+  failed to determine deps for:
+  /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro
+
+
+  XML parsing error: XML or text declaration not at start of entity: line 3,
+  column 0
+
+  when processing file:
+  /home/halil/Documents/sim_ws/src/Simulations/blender_gazebo/worlds/marsyard2021.world.xacro
+
+
+
+
+  Check that:
+
+   - Your XML is well-formed
+   - You have the xacro xmlns declaration: xmlns:xacro="http://www.ros.org/wiki/xacro"
+
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/melodic/share/xacro/cmake/xacro-extras.cmake:187 (xacro_add_xacro_file)
+  CMakeLists.txt:14 (xacro_add_files)
+
+

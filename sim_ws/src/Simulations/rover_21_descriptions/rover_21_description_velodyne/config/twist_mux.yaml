@@ -11,8 +11,12 @@ topics:
   topic   : cmd_vel
   timeout : 0.5
   priority: 1
-locks:
+- name    : hand_drive
+  topic   : /cmd_hand_drive
+  timeout : 0.5
+  priority: 100
 - name    : e_stop
-  topic   : e_stop
-  timeout : 0.0
-  priority: 255
+  topic   : /stop
+  timeout : 0.5
+  priority: 255 
+

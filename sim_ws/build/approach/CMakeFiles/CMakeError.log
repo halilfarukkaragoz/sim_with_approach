@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3b937/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3b937.dir/build.make CMakeFiles/cmTC_3b937.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f2ad0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2ad0.dir/build.make CMakeFiles/cmTC_f2ad0.dir/build
 make[1]: Entering directory '/home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3b937.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3b937.dir/CheckSymbolExists.c.o   -c /home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_3b937
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b937.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3b937.dir/CheckSymbolExists.c.o  -o cmTC_3b937 
-CMakeFiles/cmTC_3b937.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_f2ad0.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f2ad0.dir/CheckSymbolExists.c.o   -c /home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f2ad0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2ad0.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f2ad0.dir/CheckSymbolExists.c.o  -o cmTC_f2ad0 
+CMakeFiles/cmTC_f2ad0.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_3b937.dir/build.make:97: recipe for target 'cmTC_3b937' failed
-make[1]: *** [cmTC_3b937] Error 1
+CMakeFiles/cmTC_f2ad0.dir/build.make:97: recipe for target 'cmTC_f2ad0' failed
+make[1]: *** [cmTC_f2ad0] Error 1
 make[1]: Leaving directory '/home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_3b937/fast' failed
-make: *** [cmTC_3b937/fast] Error 2
+Makefile:126: recipe for target 'cmTC_f2ad0/fast' failed
+make: *** [cmTC_f2ad0/fast] Error 2
 
 File /home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2c21c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2c21c.dir/build.make CMakeFiles/cmTC_2c21c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cee51/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cee51.dir/build.make CMakeFiles/cmTC_cee51.dir/build
 make[1]: Entering directory '/home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2c21c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2c21c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_2c21c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c21c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2c21c.dir/CheckFunctionExists.c.o  -o cmTC_2c21c -lpthreads 
+Building C object CMakeFiles/cmTC_cee51.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cee51.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cee51
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cee51.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_cee51.dir/CheckFunctionExists.c.o  -o cmTC_cee51 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_2c21c.dir/build.make:97: recipe for target 'cmTC_2c21c' failed
-make[1]: *** [cmTC_2c21c] Error 1
+CMakeFiles/cmTC_cee51.dir/build.make:97: recipe for target 'cmTC_cee51' failed
+make[1]: *** [cmTC_cee51] Error 1
 make[1]: Leaving directory '/home/halil/Documents/sim_ws/build/approach/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_2c21c/fast' failed
-make: *** [cmTC_2c21c/fast] Error 2
+Makefile:126: recipe for target 'cmTC_cee51/fast' failed
+make: *** [cmTC_cee51/fast] Error 2
 
 

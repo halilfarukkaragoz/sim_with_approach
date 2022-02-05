@@ -5,15 +5,15 @@
   </include>
 
 
-  <!-- uncomment if you want empty world-->
-  <!-- <include
+  <!--uncomment if you want empty world-->
+  <!--include
     file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="paused" value="false"/>
-  </include>  -->
+  </include> -->
 
-  <!-- custom marsyard if you want empty world comment this line-->
-  <include file="$(find marsyard)/launch/marsyard.launch"/> 
-
+  <!--custom marsyard if you want empty world comment this line-->
+  <!--include file="$(find marsyard)/launch/marsyard.launch"/ --> 
+  <include file="$(find marsyard)/launch/empty_artag.launch" />
   <node
     name="tf_footprint_base"
     pkg="tf"

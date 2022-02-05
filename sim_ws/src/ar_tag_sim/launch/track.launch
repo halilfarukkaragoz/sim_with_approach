@@ -2,10 +2,12 @@
  <arg name="marker_size" default="14.5" />
  <arg name="max_new_marker_error" default="0.04" />
  <arg name="max_track_error" default="0.05" />
- <arg name="cam_image_topic" default="/camera/color/image_raw"/>
- <arg name="cam_info_topic" default="/camera/color/camera_info"/>    
- <arg name="output_frame" default="/camera_link" />
+ <arg name="cam_image_topic" default="/rover_20/camera/camera_view"/>
+ <arg name="cam_info_topic" default="/rover_20/camera/camera_info"/>    
+ <arg name="output_frame" default="/camera" />
  
+<node pkg="tf2_ros" type="static_transform_publisher" name="camera_link_broadcaster"
+        args="0.1 0 0   -0.272,  0.653, 0.272,  0.653  /base_link /camera" />  <!-- x 90 z 90 degree rotated -->
 
  <node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="false" output="screen">
   <param name="marker_size"           type="double" value="$(arg marker_size)" />
