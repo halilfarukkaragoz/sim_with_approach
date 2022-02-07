@@ -44,7 +44,7 @@ class hist_eq:
         
         now = rospy.Time.now().secs
         
-        if (int(now) -int(self.starting_time)) %4 == 0:
+        if (int(now) -int(self.starting_time)) %2 == 0:
             self.camera_settings_opt(cv_image)
 
 
@@ -100,20 +100,14 @@ class hist_eq:
     def biletral_filer(self,img): # edge preserving smoothing filter
         return cv2.bilateralFilter(img,5, 10,10)                                                                                                         
 
-    def canny(self,img):
-        edges = cv2.Canny(img,250,300)
-        edges[edges == 255] = 30
-        img[:,:,0] = img[:,:,0] + edges
-        img[:,:,1] = img[:,:,1] + edges 
-        img[:,:,2] = img[:,:,2] + edges 
-
-        return img
 
 
-    def camera_settings_opt(self,cv_image): 
-        if np.mean(cv_image)> 190 :
+    def camera_settings_opt(self,cv_image):
+        hsv_img = cv2.cvtColor(cv_image,cv2.COLOR_BGR2HSV) 
+        h,s,v = cv2.split(hsv_img)
+        if np.mean(v)> 160 :
             self.flag_over_exposured = True
-        elif np.mean(cv_image) < 30:
+        elif np.mean(v) < 50:
             self.flag_low_exposured = True
         else :
             self.flag_over_exposured = False
@@ -127,13 +121,13 @@ class hist_eq:
             else :
                 self.lower_limit_exposure = True
                 self.use_filter = True
-                self.exposure = 7
+                self.exposure = 4
             if self.gain > 5 :
                 self.gain = self.gain = -2
                 self.upper_limit_exposure = False
             else : 
                 self.lower_limit_gain = True
-                self.gain = 7
+                self.gain = 5
         
             subprocess.call(['sh', '/home/halil/Documents/ros_ws/src/ar_tag_demo/script/cam.sh',str(self.exposure),str(self.gain)])
 

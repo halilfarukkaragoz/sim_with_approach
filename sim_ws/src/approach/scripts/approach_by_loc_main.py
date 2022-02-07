@@ -5,7 +5,7 @@ from actionlib_msgs.msg import GoalStatusArray
 from nav_msgs.msg import Odometry
 from tf.transformations import euler_from_quaternion
 import numpy as np 
-from tf.msg import tfMessage
+from visualization_msgs.msg import Marker
 import math as m
 from send_goal import send_goal
 from std_msgs.msg import Bool
@@ -37,52 +37,38 @@ class Approach_by_loc:
         self.starting_angle = self.spihiral_angle * 2 + m.pi/2
         self.sphiral_points(1.1,1.15,self.spihiral_angle)
 
-
-        
-
         self.ar_tags = {}
         # it is for counting ar tags
-        self.temp_ar_tag = {}
+        self.count_tag = {}
          # since you rotate according to zero point if you are at 0 you can not rotate so you give a first position
         
 
         
         rospy.Subscriber("move_base/status",GoalStatusArray,self.move_base_status)
-        rospy.Subscriber("/tf",tfMessage,self.detect_ar_tag)
+        rospy.Subscriber("/vis_marker_correct",Marker,self.detect_ar_tag)
         send_goal(self.x + self.starting_point[0],self.y + self.starting_point[1],self.starting_angle)
         rospy.spin()
 
 
     def detect_ar_tag(self, data):
-        transform = data.transforms
-        for i in transform: # detect ar_tag
-            name = i.child_frame_id
-            if "ar_marker_" in name:
-                rospy.loginfo("Saw_marker but i am not sure")
-                if(not self.flag_found_ar_tag):
-                    self.flag_found_ar_tag = True
-                    self.flag_draw_sphiral = False
-                    self.timer_for_tag = rospy.Time.now().to_sec()
-                    self.stop()
-                if name not in self.temp_ar_tag.keys():
-                    self.temp_ar_tag[name] =0
-                for key,value in self.temp_ar_tag.items():
-                    if key == name:
-                        self.temp_ar_tag[name] +=1
-                    if value > 3:
-                        self.ar_tags[key] = i.transform
-                    print(self.ar_tags)
+        name = data.id
+        rospy.loginfo("Saw_marker but i am not sure")
+        if(not self.flag_found_ar_tag):
+            self.flag_found_ar_tag = True
+            self.flag_draw_sphiral = False
+            self.timer_for_tag = rospy.Time.now().to_sec()
+            self.stop()
+        if name not in self.count_tag.keys():
+            self.count_tag[name] =0
+        for key,value in self.count_tag.items():
+            if key == name:
+                self.count_tag[name] +=1
+            if value > 20:
+                self.ar_tags[key] = data.pose
+            print(self.ar_tags)
 
-        if (self.flag_found_ar_tag):
-            if(rospy.Time.now().to_sec() -  self.timer_for_tag > 5  and len(self.ar_tags) == 0):
-                self.starting_look_around = rospy.Time.now().secs
-                self.initial_yaw = self.yaw
-                print(self.initial_yaw)
-                self.flag_found_ar_tag = False
-                self.flag_draw_sphiral = False
-                self.flag_look_around = True
-                self.go_on()
-                self.temp_ar_tag.clear()
+
+
 
 
 
@@ -125,6 +111,16 @@ class Approach_by_loc:
             (x_angular, y_angular, z_angular, w_angular))
         if(self.flag_look_around):
             self.turn_around(m.pi/3)
+        if (self.flag_found_ar_tag):
+            if(rospy.Time.now().to_sec() -  self.timer_for_tag > 5  and len(self.ar_tags) == 0):
+                self.starting_look_around = rospy.Time.now().secs
+                self.initial_yaw = self.yaw
+                print(self.initial_yaw)
+                self.flag_found_ar_tag = False
+                self.flag_draw_sphiral = False
+                self.flag_look_around = True
+                self.go_on()
+                self.count_tag.clear()
 
         
 
@@ -166,5 +162,3 @@ class Approach_by_loc:
 if __name__ == "__main__":
     k = Approach_by_loc()
    
-    
-    
