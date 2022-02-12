@@ -1,7 +1,6 @@
 <launch>
     <include file="$(find approach)/launch/odom.launch" />
     <include file="$(find rover_21_description_velodyne)/launch/gazebo.launch" />
-    <include file="$(find ar_tag_sim)/launch/track_sim.launch" />
+    <include file="$(find ar_tag_sim)/launch/aruco_detect.launch" />
     <node pkg="approach" type="e_stop.py" name="e_stop_node" output="screen"/>
-    <node pkg="ar_tag_sim" type="axis_corrector" name="axis_corrector_node" output="screen"/>
 </launch>

@@ -115,7 +115,7 @@ class hist_eq:
 
         if (self.flag_over_exposured) and (not ( self.lower_limit_exposure and self.lower_limit_gain)) : # dont run bot gain and exposure is lower limit
             if self.exposure > 10 :
-                self.exposure = self.exposure -5
+                self.exposure = self.exposure -4
                 self.upper_limit_exposure = False
                 self.use_filter = False
             else :
@@ -134,14 +134,14 @@ class hist_eq:
 
         elif (self.flag_low_exposured) and (not ( self.upper_limit_exposure and self.upper_limit_gain)):
             if self.exposure < 600  :
-                self.exposure = self.exposure +5
+                self.exposure = self.exposure +4
                 self.lower_limit_exposure = False
                 self.use_filter = False
             else :
                 self.upper_limit_exposure = True
                 self.use_filter = False
 
-            if self.gain < 100 :
+            if self.gain < 50 :
                 self.gain = self.gain + 2
                 self.lower_limit_gain = False
             else : 

@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target axis_corrector[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/axis_corrector.dir/src/axis_corrector.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/halil/Documents/sim_ws/devel/.private/ar_tag_sim/lib/ar_tag_sim/axis_corrector[0m
-[100%] Built target axis_corrector

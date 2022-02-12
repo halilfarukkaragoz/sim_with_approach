@@ -1,0 +1,1 @@
+/home/halil/Documents/sim_ws/devel/.private/aruco_detect/lib/python2.7/dist-packages/marker_generation/__init__.py

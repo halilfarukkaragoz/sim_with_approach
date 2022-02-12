@@ -1,0 +1,12 @@
+Symlinking /home/halil/Documents/sim_ws/devel/share/aruco_detect/docs/DetectorParamsConfig.wikidoc
+Symlinking /home/halil/Documents/sim_ws/devel/share/aruco_detect/docs/DetectorParamsConfig-usage.dox
+Symlinking /home/halil/Documents/sim_ws/devel/share/aruco_detect/docs/DetectorParamsConfig.dox
+Symlinking /home/halil/Documents/sim_ws/devel/share/aruco_detect/cmake/aruco_detectConfig.cmake
+Symlinking /home/halil/Documents/sim_ws/devel/share/aruco_detect/cmake/aruco_detectConfig-version.cmake
+Symlinking /home/halil/Documents/sim_ws/devel/include/aruco_detect/DetectorParamsConfig.h
+Symlinking /home/halil/Documents/sim_ws/devel/lib/python2.7/dist-packages/aruco_detect/__init__.py
+Symlinking /home/halil/Documents/sim_ws/devel/lib/python2.7/dist-packages/aruco_detect/cfg/DetectorParamsConfig.py
+Symlinking /home/halil/Documents/sim_ws/devel/lib/python2.7/dist-packages/aruco_detect/cfg/__init__.py
+Symlinking /home/halil/Documents/sim_ws/devel/lib/python2.7/dist-packages/marker_generation/__init__.py
+Symlinking /home/halil/Documents/sim_ws/devel/lib/aruco_detect/aruco_detect
+Symlinking /home/halil/Documents/sim_ws/devel/lib/pkgconfig/aruco_detect.pc
